@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naturopathic medicine</title>
+        <link rel="icon" href="images/Designer.png">
+        <link rel="Stylesheet" href="CSS/styles.css">
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+      <header>
+        <img src="images/Designer1.jpeg" alt="Logo for the hospital" width="30" height="30">
+        <h2>Naturopathic medicine</h2>
+      </header>
+      <!--Navigation Bar-->
+      <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#About Us">About Us</a>
+            </li>
+            <li>
+                <a href="#Naturopahy">Naturopathy</a>
+            </li>
+            <li>
+                <a href="#Home Remedies">Home Remedies</a>
+            </li>
+        </ul>
+      </nav>
+      <main>
+              <!--Main Content-->
+        <div class="container">
+            <section id="home">
+                <div class="cent">
+                    <img src="images/Listen.jpg" alt="Listen to your body">
+                    <div id="formSummary">
+                        <h4>Form Summary</h4>
+                        <p id="summaryContent">.</p>
+                    </div>
+                </div>
+               
+            </section>
+            <section id="About Us"></section>
+                <h4>About Us</h4>
+                <p>We are a medical missionary team who believe healing by prayer should not neglect to make use of the remedial agencies within our reach. It is not a denial of faith to use such remedies as God has provided to alleviate pain and to aid nature in her work of restoration.</p>
+                <br>
+            </section>
+            <section id="Naturopahy">
+                <h4>Naturopathy</h4>
+                <p>Naturopahy is a distinct type of primary care medicine guided by a unique set of principles that recognize the body's innate healing capacity, emphasize disease prevention, and encourage individual responsibility to obtain optimal health.<br>"Health is a treasure. Of all temporal possessions it is the most precious".</p>
+                <br>
+            </section>
+            <section id="Home Remedies">
+                <h4>Home Remedies</h4>
+                <p>Pure air, sunlight, abstemiousness, rest, exercise, proper diet, the use of water, trust in divine power—these are the true remedies. Every person should have a knowledge of nature's remedial agencies and how to apply them. It is essential both to understand the principles involved in the treatment of the sick and to have a practical training that will enable one rightly to use this knowledge.</p>
+                <br>
+            </section>
+        </div>
+
+                                                
+        <!--Side bar-->
+        <div class="sidebar">
+            <a href="Resources">Resources</a>
+            <a href="Providers">Providers List</a>
+            <a href="Book Appointment">Book Appointment</a>
+            <br>
+            <input id="search" type="text" placeholder="Search....">
+
+            <!--Registration Form-->
+            <h4>Sign up</h4>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error"></span>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <span id="passwordError" class="error"></span>
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="password">
+                <span id="confirmPasswordError" class="error"></span>  
+
+                <label for="age">Age</label>
+                <input type="text" id="age" name="age">
+                <span id="ageError" class="error"></span>
+
+                <label for="gender">Gender:</label>
+                <div id="person">
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female" required> Female
+                </div>
+                <div class="error-message" id="termsError"></div>
+
+                <label for="country">Country:</label>
+                <select id="country" required>
+                    <option value="">Select</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Ivory Coast">Ivory Coast</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Gambia">Gambia</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Mauritius">Mauritius</option>
+                </select><br>
+
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required> I agree to the terms & conditions
+                </label><br>
+                                             
+
+                <button type="submit" >Register</button>
+            </form>
+
+        
+       
+            <!--Registration Form-->
+
+            
+            <!-- login form -->
+            <form id="loginForm">
+                <p>Already have an account? <br><i>Welcome...</i></p>
+                <h4>Login Form</h4>
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <div class="error-message" id="loginEmailError"></div>
+            
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <div class="error-message" id="loginPasswordError"></div><br>
+            
+                <button type="submit">Login</button>
+            </form>
+             <!-- login form -->
+
+        </div>
+      </main>
+      <footer>
+        <p>@Copyright Naturopathic 2024-All Rights Reserved</p>
+        <p>Contact Us:quintaokoth@gmail.com or Call:777</p>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+</html>

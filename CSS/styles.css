@@ -1,0 +1,153 @@
+*{
+    margin: 0;/*Reset */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #a6b697;
+    color:#221822;
+    text-align: center;
+    padding: 10px;
+   
+}
+nav {
+    background-color:#e4e4a1;
+    display: flex;   
+    flex: auto;
+} 
+nav ul{
+    display: flex;
+   justify-content: flex-end;
+   list-style: none;
+   
+}
+nav ul li{
+    padding: 5px 10px; 
+    
+}
+
+.cent {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}  
+
+.container,footer,.sidebar{
+    padding: 20px;
+}
+
+.comtainer{
+    background-color: #F5F5DC;
+}
+
+main{
+    display: flex;
+}
+.sidebar{
+    background-color: 	#C8A2C8;
+}
+#search{
+   margin-bottom: 20px; 
+}
+h4{
+    color: rgb(212, 10, 131);
+}
+h3{
+    margin-bottom: 10px;
+    color: #330404;
+}
+form {
+    width: 200px;
+    margin:auto;
+}
+#formSummary {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 20px;
+    max-width: 400px;
+    border-collapse: collapse;
+    justify-content: end;
+}
+th, td {
+    border: 1px solid rgb(223, 143, 191);
+    padding: 3px;
+    text-align: left;
+    color: black;
+}
+
+th {
+    background-color: #ffffff;
+    color: rgb(212, 10, 131);
+}
+
+/* Summery table
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+} */
+
+label,input{
+    display:block;
+    margin:0;
+}
+#person {
+    display:flex;
+    flex-direction:row;
+    gap: 10px;
+
+}
+#country{
+    margin-bottom: 10px;
+}
+button{
+    color:rgb(8, 7, 8);
+    background: #a6b697;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.error {
+    color:red;
+    font-size: 12px;
+}
+footer{
+    background-color: #a6b697;
+    text-align: center;
+    color:#A020F0 ;
+}
+.sidebar a{
+    display: block;
+    margin-bottom: 10px;
+}
+/*Media query for resposniveness*/
+/*Larger screen >768px*/
+@media (min-width: 768px){
+    nav ul{
+        flex: 1 1 20%;
+    }
+}
+
+/*Small screen <768px*/
+@media (max-width: 768px){
+    nav ul{
+        flex: 1 1 45%;
+    }
+}
+
+/*Smaller screen < 480px*/
+@media (max-width: 480px){
+   nav ul{
+        flex: 1 1 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+}
+
+
+ 
